@@ -187,3 +187,11 @@ poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 
 // [5, 2, 3]
 // [1, 5, 3, 9, 6, 1]
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+  const btn = document.querySelector('body');
+  btn.addEventListener('click', function () {
+    header.style.color = 'blue';
+  });
+})();
